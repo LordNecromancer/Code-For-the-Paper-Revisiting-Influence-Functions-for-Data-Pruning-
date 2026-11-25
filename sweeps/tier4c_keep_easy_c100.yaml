@@ -1,0 +1,12 @@
+# TIER 4c - does keeping the EASIER twin win when data becomes scarce?  (~4 h, 3 seeds, both datasets)
+# Prediction stated before running (Sorscher et al. 2022): at high pruning ratios keep-easy beats
+# keep-hard. Compare pair_influence[keep=easy] with the existing pair_influence (keep-hard) on the
+# same DINOv2 pairs, val_acc, 3-seed paired differences (CIFAR-100 copy of tier4c_keep_easy.yaml).
+config: configs/cifar100_resnet18.yaml
+name: cifar100_r18_snap
+set: ["score.snapshot_epochs=[10, 30]", "score.checkpoint_epochs=[5, 10, 15, 20, 30, 50, 75]", "score.tracin_early_max=20"]
+rescore: true
+seeds: [0, 1, 2]
+ratios: [0.5, 0.7]
+methods:
+  - {method: pair_influence, emb: dinov2_s14, opts: {influence_key: param_norm_e10, keep: easy}}

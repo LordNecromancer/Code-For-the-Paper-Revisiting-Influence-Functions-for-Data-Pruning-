@@ -1,0 +1,27 @@
+config: configs/smoke.yaml
+seeds: [0, 1]
+ratios: [0.3, 0.6]
+methods:
+  - {method: random}
+  - {method: el2n}
+  - {method: forgetting}
+  - {method: moderate}
+  - {method: ccs}
+  - {method: influence_global}
+  - {method: pair_random, emb: self}
+  - {method: pair_loss, emb: self}
+  - {method: pair_influence, emb: self}
+  - {method: pair_influence_rw, emb: self}
+  - {method: pair_valinf, emb: self}
+  - {method: pair_merge_rw, emb: self}
+  - {method: pair_influence, emb: pixels}
+  - {method: pair_influence, emb: ae}
+  - {method: cluster_rw, emb: self}
+  - {method: cluster, emb: self}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: keep}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: avg}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: infl_avg}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: hybrid}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: ae}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: featmatch, steps: 20}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: featmatch, steps: 20, select: merge_influence}}

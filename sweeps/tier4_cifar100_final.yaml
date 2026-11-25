@@ -1,0 +1,18 @@
+# TIER 4 - CIFAR-100 confirmation of the frozen CIFAR-10 findings (~11 h per seed on a GTX 1080).
+# Checkpoints and rescoring are on so directed-influence methods can be added later (if tier 2d
+# passes) without re-training the scoring runs: just append the method entries and rerun.
+config: configs/cifar100_resnet18.yaml
+name: cifar100_r18_snap
+set: ["score.snapshot_epochs=[10, 30]", "score.checkpoint_epochs=[5, 10, 15, 20, 30, 50, 75]", "score.tracin_early_max=20"]
+rescore: true
+seeds: [0, 1, 2]
+ratios: [0.3, 0.5, 0.7]
+methods:
+  - {method: random}
+  - {method: el2n}
+  - {method: ccs}
+  - {method: pair_random, emb: self}
+  - {method: pair_influence, emb: self}
+  - {method: pair_random, emb: dinov2_s14}
+  - {method: pair_loss, emb: dinov2_s14, opts: {loss_key: loss_e10}}
+  - {method: pair_influence, emb: dinov2_s14, opts: {influence_key: param_norm_e10}}

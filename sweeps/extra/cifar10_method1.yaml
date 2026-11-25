@@ -1,0 +1,24 @@
+# Method 1 revisited: same pairs, one merged example per pair. Which merge operator works?
+# One merging round reaches at most ~50% pruning, hence the ratios. Same run dir as the main
+# sweep, so `random` at 0.1/0.3 is reused from there; reference rows come from cifar10_main.
+config: configs/cifar10_resnet18.yaml
+seeds: [0, 1, 2]
+ratios: [0.1, 0.3, 0.45]
+methods:
+  - {method: random}
+  - {method: pair_influence_rw, emb: self}                                   # Method 2 reference
+  # merge operators, closest pairs first, weight 2 (mass conserving)
+  - {method: merge, emb: self, opts: {op: keep}}                              # = Method 2 + reweight (1 round)
+  - {method: merge, emb: self, opts: {op: avg}}
+  - {method: merge, emb: self, opts: {op: infl_avg}}
+  - {method: merge, emb: self, opts: {op: hybrid}}
+  - {method: merge, emb: self, opts: {op: ae}}
+  - {method: merge, emb: self, opts: {op: featmatch}}
+  # the thesis' pair-selection rule: smallest first-order merge influence among 1.5x candidates
+  - {method: merge, emb: self, opts: {op: avg, select: merge_influence}}
+  - {method: merge, emb: self, opts: {op: featmatch, select: merge_influence}}
+  # ablations at 30% only
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: avg, weight: 1}}            # thesis weighting
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: featmatch, weight: 1}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: featmatch, augment: false}}  # is siamese aug needed?
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: featmatch, tv: 0.05}}       # smoother images

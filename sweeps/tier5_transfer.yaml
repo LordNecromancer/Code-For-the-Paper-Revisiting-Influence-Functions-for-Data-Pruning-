@@ -1,0 +1,13 @@
+# TIER 5 (optional, ~12 h) - cross-architecture transfer: ResNet-18-chosen subsets -> VGG-11.
+# Run after tier 2 in the same run directory (reuses its subsets).
+config: configs/cifar10_resnet18.yaml
+seeds: [0, 1, 2]
+ratios: [0.3, 0.5]
+train_set: [model.arch=vgg11_cifar]
+results_suffix: vgg11
+methods:
+  - {method: random, ratios: [0.0, 0.3, 0.5]}   # 0.0 = full-data VGG-11 baseline
+  - {method: ccs}
+  - {method: pair_random, emb: self}
+  - {method: pair_influence, emb: self}
+  - {method: pair_loss, emb: self}

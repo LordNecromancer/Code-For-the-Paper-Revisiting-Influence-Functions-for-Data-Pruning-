@@ -1,0 +1,22 @@
+# Ablations at the 30% and 50% ratios. Pick T_q / damping / embedding on val_acc, never test_acc.
+config: configs/cifar10_resnet18.yaml
+seeds: [0, 1, 2]
+ratios: [0.3, 0.5]
+methods:
+  # which rule picks the member to drop inside a pair?
+  - {method: pair_loss, emb: self}
+  - {method: pair_valinf, emb: self}
+  - {method: pair_influence, emb: self, opts: {influence_key: self}}
+  # does pairing matter, or is influence alone enough?
+  - {method: influence_global}
+  # which embedding finds useful duplicates?
+  - {method: pair_influence, emb: pixels}
+  - {method: pair_influence, emb: ae}
+  - {method: pair_influence, emb: imagenet_r50}
+  - {method: pair_influence, emb: dinov2_s14}
+  # the influence threshold T (as a quantile of the pool's scores)
+  - {method: pair_influence, emb: self, opts: {T_q: 0.5}}
+  - {method: pair_influence, emb: self, opts: {T_q: 0.8}}
+  # Euclidean pairing (matches the proposition's sigma) and equal-compute budget
+  - {method: pair_merge_rw, emb: self, opts: {metric: l2}}
+  - {method: pair_influence_rw, emb: self, opts: {metric: l2}}

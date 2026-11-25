@@ -1,0 +1,17 @@
+# TIER 5 - fine-tuning regime (the thesis setting, now with a random baseline and 3 seeds).
+# ImageNet-pretrained ResNet-50, fine-tuned 3 epochs at 224 px (configs/cifar10_ft_resnet50.yaml).
+# "self" pairs here come from the fine-tuned ImageNet ResNet-50. ~3.5 GPU-h per seed on a GTX 1080.
+config: configs/cifar10_ft_resnet50.yaml
+name: cifar10_ft_r50
+seeds: [0, 1, 2]
+ratios: [0.3, 0.5, 0.7]
+methods:
+  - {method: random}
+  - {method: el2n}
+  - {method: ccs}
+  - {method: pair_random, emb: self}
+  - {method: pair_loss, emb: self}
+  - {method: pair_influence, emb: self}
+  - {method: pair_random, emb: dinov2_s14}
+  - {method: pair_loss, emb: dinov2_s14}
+  - {method: pair_influence, emb: dinov2_s14}

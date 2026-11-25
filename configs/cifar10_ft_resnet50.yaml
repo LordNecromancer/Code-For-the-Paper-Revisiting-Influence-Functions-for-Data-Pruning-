@@ -1,0 +1,30 @@
+# Secondary setting matching the original thesis: ImageNet-pretrained ResNet-50 fine-tuned
+# for 3 epochs at 224x224 with Adam 1e-4. Pruning is known to be easy in this regime, so it
+# is reported as a complementary result, never as the headline.
+name: cifar10_ft_r50
+data:
+  dataset: cifar10
+  root: ./data
+  val_size: 5000
+  split_seed: 0
+  normalize: imagenet
+  augment: true
+  image_size: 224
+model:
+  arch: resnet50
+  pretrained: true
+train:
+  epochs: 3
+  batch_size: 64
+  optimizer: adam
+  lr: 1.0e-4
+  weight_decay: 0.0
+  budget: epochs
+  amp: true
+  log_every: 1
+score:
+  el2n_epoch: 1
+influence:
+  mode: auto            # 10 x 2049 > 12000 params -> K-FAC
+  damping: 0.01
+  exact_max_params: 12000

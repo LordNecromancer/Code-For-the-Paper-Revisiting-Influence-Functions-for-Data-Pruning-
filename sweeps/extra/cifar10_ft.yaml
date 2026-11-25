@@ -1,0 +1,11 @@
+# Re-run of the thesis setting with a proper random baseline and 3 seeds.
+config: configs/cifar10_ft_resnet50.yaml
+seeds: [0, 1, 2]
+ratios: [0.2, 0.4, 0.6]
+methods:
+  - {method: random}
+  - {method: el2n}
+  - {method: pair_random, emb: self}
+  - {method: pair_influence, emb: self}
+  - {method: pair_influence_rw, emb: self}
+  - {method: pair_merge_rw, emb: self}

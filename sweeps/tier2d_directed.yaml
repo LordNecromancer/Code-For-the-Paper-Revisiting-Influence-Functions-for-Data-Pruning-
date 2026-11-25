@@ -1,0 +1,24 @@
+# TIER 2d - can validation-DIRECTED influence beat the loss?  (~6 h, seed 0)
+# Size-based influence ||H^-1 g|| was indistinguishable from the loss (tiers 2b/2c). Directed
+# influence asks whether training on z helps held-out data, which the loss cannot know.
+# Val half A defines the direction; judge ONLY on val_b_acc (half B), never val_acc or test_acc.
+# Decision (fixed before running): a directed variant goes to 3 seeds only if it beats BOTH
+# pair_loss[loss_e10] and pair_influence[param_norm_e10] on the same DINOv2 pairs by >= 0.5
+# val_b points at 50% AND 70%.
+config: configs/cifar10_resnet18.yaml
+name: cifar10_r18_dir
+set: ["score.snapshot_epochs=[10, 30]", "score.checkpoint_epochs=[5, 10, 15, 20, 30, 50, 75]", "score.tracin_early_max=20"]
+rescore: true
+seeds: [0]
+ratios: [0.5, 0.7]
+methods:
+  # references on the same pairs (re-run here so they have val_b_acc)
+  - {method: pair_random, emb: dinov2_s14}
+  - {method: pair_loss, emb: dinov2_s14, opts: {loss_key: loss_e10}}
+  - {method: pair_influence, emb: dinov2_s14, opts: {influence_key: param_norm_e10}}
+  # signed last-layer influence-function estimate of the val-A loss change
+  - {method: pair_valinf, emb: dinov2_s14, opts: {valinf_key: val_removal_A_e10}}
+  - {method: pair_valinf, emb: dinov2_s14, opts: {valinf_key: val_removal_A}}
+  # full-network TracIn towards val-A over checkpoints
+  - {method: pair_loss, emb: dinov2_s14, opts: {loss_key: tracin_val_early}}
+  - {method: pair_loss, emb: dinov2_s14, opts: {loss_key: tracin_val}}

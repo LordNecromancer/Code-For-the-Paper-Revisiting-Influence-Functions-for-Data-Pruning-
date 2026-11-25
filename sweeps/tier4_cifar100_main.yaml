@@ -1,0 +1,18 @@
+# TIER 4 - second dataset (CIFAR-100), same methods as tier 2 (~34 h on a GTX 1080; 3 seeds x 100 epochs).
+# Seeds are independent: e.g. --seeds 0 on the PC and seeds 1+2 on Kaggle (kaggle/run_sweep_kaggle.ipynb).
+# Variants chosen after tier 1 (cifar10_t1, 1 seed x 30 epochs, val_acc):
+#   pair_influence beat pair_random by +0.1 / +1.7 / +2.7 at 30/50/70%; reweighting, merge-ordered pairs,
+#   clusters and merging did not beat plain pair_influence. pair_loss is promoted from the ablations because
+#   "is influence better than the per-example loss?" is the first question reviewers will ask.
+config: configs/cifar100_resnet18.yaml
+seeds: [0, 1, 2]
+ratios: [0.3, 0.5, 0.7]
+methods:
+  - {method: random}
+  - {method: el2n}
+  - {method: ccs}
+  - {method: moderate}
+  - {method: pair_random, emb: self}        # control: same pairs, random choice (SemDeDup-style)
+  - {method: pair_influence, emb: self}     # PROPOSED: Method 2 (exact-ratio version)
+  - {method: pair_loss, emb: self}          # control: same pairs, drop the lower-loss member
+  - {method: pair_influence_rw, emb: self}  # + reweighting (theory variant; lost in tier 1, kept for the theory section)

@@ -1,0 +1,10 @@
+# Method 2 generalised from pairs to clusters (per-class k-means, one representative each).
+config: configs/cifar10_resnet18.yaml
+seeds: [0, 1, 2]
+ratios: [0.1, 0.3, 0.5, 0.7]
+methods:
+  - {method: cluster_rw, emb: self, opts: {rep: influence}}
+  - {method: cluster_rw, emb: self, opts: {rep: medoid}}
+  - {method: cluster_rw, emb: self, opts: {rep: random}}
+  - {method: cluster, emb: self, opts: {rep: influence}}                       # no reweighting
+  - {method: cluster_rw, emb: self, opts: {rep: influence, max_weight: 4}}    # cap extreme weights

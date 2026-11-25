@@ -1,0 +1,16 @@
+# TIER 3 - ablations reviewers will ask for (~13 h; 3 seeds, 100 epochs, one ratio each).
+# Same run directory as tier 2, so the scoring runs are reused. Trim entries that tier 1
+# already answered decisively. (pair_loss moved to tier 2.)
+config: configs/cifar10_resnet18.yaml
+seeds: [0, 1, 2]
+ratios: [0.5]
+methods:
+  - {method: influence_global}                                       # influence without pairing
+  - {method: pair_influence, emb: dinov2_s14}                        # does the embedding matter?
+  - {method: pair_influence, emb: ae}                                # the thesis' autoencoder
+  - {method: pair_influence, emb: self, opts: {T_q: 0.5}}            # influence threshold T
+  - {method: cluster_rw, emb: self, opts: {rep: influence}}
+  # Method 1: one merging round reaches ~50% at most, so merges are compared at 30%
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: keep}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: avg}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: featmatch}}

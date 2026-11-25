@@ -1,0 +1,9 @@
+config: configs/smoke.yaml
+seeds: [0]
+ratios: [0.3]
+train_set: [model.arch=vgg11_cifar, model.width_mult=0.125]
+results_suffix: vgg11
+methods:
+  - {method: random, ratios: [0.0, 0.3]}
+  - {method: pair_influence_rw, emb: self}
+  - {method: merge, emb: self, opts: {op: featmatch, steps: 20}}

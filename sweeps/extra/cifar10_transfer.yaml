@@ -1,0 +1,16 @@
+# Cross-architecture transfer: subsets chosen with ResNet-18 scores, then train VGG-11.
+# Run after cifar10_main / method1 / method2_ext (it reuses their subsets).
+config: configs/cifar10_resnet18.yaml
+seeds: [0, 1, 2]
+ratios: [0.3, 0.5]
+train_set: [model.arch=vgg11_cifar]
+results_suffix: vgg11
+methods:
+  - {method: random, ratios: [0.0, 0.3, 0.5]}          # 0.0 = full-data VGG-11 baseline
+  - {method: el2n}
+  - {method: ccs}
+  - {method: pair_random, emb: self}
+  - {method: pair_influence_rw, emb: self}
+  - {method: pair_merge_rw, emb: self}
+  - {method: cluster_rw, emb: self, opts: {rep: influence}}
+  - {method: merge, emb: self, ratios: [0.3, 0.45], opts: {op: featmatch}}

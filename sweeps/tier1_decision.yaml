@@ -1,0 +1,24 @@
+# TIER 1 - "which story does the paper tell?"  (~4 h on a GTX 1080; 1 seed, 30 epochs)
+# Short schedule + one seed = cheap direction-finding. NOT paper numbers. Compare on val_acc.
+# Questions it answers:
+#   Q1 does influence beat a random choice inside the same pairs?  pair_influence vs pair_random
+#   Q2 does reweighting help?                                     pair_influence_rw vs pair_influence
+#   Q3 do merge-ordered pairs or clusters do better?              pair_merge_rw, cluster_rw
+#   Q4 can merging (Method 1) beat keeping a real image?          merge avg / featmatch vs keep
+#   Q5 sanity: are we above random and a standard baseline?       random, el2n
+config: configs/cifar10_resnet18.yaml
+name: cifar10_t1
+set: [train.epochs=30, score.el2n_epoch=3]
+seeds: [0]
+ratios: [0.3, 0.5, 0.7]
+methods:
+  - {method: random}
+  - {method: el2n}
+  - {method: pair_random, emb: self}
+  - {method: pair_influence, emb: self}
+  - {method: pair_influence_rw, emb: self}
+  - {method: pair_merge_rw, emb: self}
+  - {method: cluster_rw, emb: self, opts: {rep: influence}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: keep}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: avg}}
+  - {method: merge, emb: self, ratios: [0.3], opts: {op: featmatch}}

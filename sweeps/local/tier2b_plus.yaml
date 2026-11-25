@@ -1,0 +1,9 @@
+config: configs/cifar10_resnet18.yaml
+name: cifar10_r18_snap
+set: ["score.snapshot_epochs=[10, 30]"]
+seeds: [0]
+ratios: [0.5, 0.7]
+methods:
+  - {method: pair_loss, emb: dinov2_s14, opts: {loss_key: loss_e10}}
+  - {method: pair_loss, emb: dinov2_s14, opts: {loss_key: el2n}}
+  - {method: pair_influence, emb: dinov2_s14}

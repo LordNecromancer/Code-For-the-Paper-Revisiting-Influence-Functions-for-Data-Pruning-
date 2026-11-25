@@ -1,0 +1,11 @@
+config: configs/smoke.yaml
+name: smoke_directed
+set: ["score.snapshot_epochs=[1]", "score.checkpoint_epochs=[1, 2, 3]", "score.tracin_early_max=2"]
+rescore: true
+seeds: [0]
+ratios: [0.5]
+methods:
+  - {method: pair_valinf, emb: self, opts: {valinf_key: val_removal_A}}
+  - {method: pair_valinf, emb: self_e1, opts: {valinf_key: val_removal_A_e1}}
+  - {method: pair_loss, emb: self, opts: {loss_key: tracin_val}}
+  - {method: pair_loss, emb: self, opts: {loss_key: tracin_val_early}}

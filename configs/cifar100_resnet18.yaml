@@ -1,0 +1,32 @@
+# Main setting: ResNet-18 trained from scratch on CIFAR-100 (standard in the pruning literature).
+name: cifar100_r18
+data:
+  dataset: cifar100
+  root: ./data
+  val_size: 5000        # class-balanced, held out from train; used ONLY for tuning (T_q, damping, embedding)
+  split_seed: 0         # fixed across seeds so every method prunes the same 45k pool
+  normalize: dataset
+  augment: true
+  image_size: null
+model:
+  arch: resnet18_cifar
+train:
+  epochs: 100           # same fixed recipe for every method (halves cost vs 200)
+  batch_size: 128
+  optimizer: sgd
+  lr: 0.1
+  momentum: 0.9
+  nesterov: true
+  weight_decay: 5.0e-4
+  warmup_epochs: 0
+  budget: epochs        # 'epochs' (fewer steps on smaller sets) or 'iterations' (equal compute)
+  amp: true
+  log_every: 10
+score:
+  el2n_epoch: 10        # ~10% into training, as in Paul et al. (epoch 20 of 200)
+influence:
+  mode: auto            # exact Hessian for C*(d+1) <= exact_max_params, else K-FAC
+  damping: 0.01         # relative to mean Hessian diagonal
+  exact_max_params: 12000
+embed:
+  ae: {latent: 256, epochs: 30}

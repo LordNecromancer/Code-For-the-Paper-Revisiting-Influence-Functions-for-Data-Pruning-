@@ -1,0 +1,24 @@
+# TIER 2b - why did pair_influence lose its tier-1 advantage at 100 epochs?  (~4.5 h, seed 0)
+# Hypothesis: the converged scoring model (train loss ~0.002) has collapsed each class in feature
+# space, so (i) "self" nearest neighbours are close to random and (ii) last-layer influence is
+# nearly uninformative. Test: take embeddings and/or scores from an EARLY checkpoint (epoch 10,
+# like EL2N) or from an external encoder (DINOv2), which the scoring run cannot collapse.
+# Run `python -m dpif.diagnose` on cifar10_t1 and cifar10_r18 first (minutes, no GPU training).
+# Compare against tier-2 seed-0 numbers (same seed, pool and protocol): random 92.36 / 87.78,
+# pair_random 92.08 / 87.70 at 50 / 70%.
+# Decision (val_acc, decided before looking): an early/external variant is worth confirming on
+# 3 seeds only if pair_influence beats BOTH pair_random and pair_loss on the same pairs by
+# >= 0.5 points at 50% and 70%.
+config: configs/cifar10_resnet18.yaml
+name: cifar10_r18_snap
+set: ["score.snapshot_epochs=[10, 30]"]
+seeds: [0]
+ratios: [0.5, 0.7]
+methods:
+  # early checkpoint for both the pairs and the scores
+  - {method: pair_random, emb: self_e10}
+  - {method: pair_influence, emb: self_e10, opts: {influence_key: param_norm_e10}}
+  - {method: pair_loss, emb: self_e10, opts: {loss_key: loss_e10}}
+  # external embedding (cannot collapse), early influence
+  - {method: pair_random, emb: dinov2_s14}
+  - {method: pair_influence, emb: dinov2_s14, opts: {influence_key: param_norm_e10}}
