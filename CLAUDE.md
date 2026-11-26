@@ -1,7 +1,7 @@
 # Project context for Claude Code
 
 This repo re-runs the experiments for a journal revision of an MSc-thesis paper on
-influence-guided near-duplicate data pruning. Read `README.md` (pipeline, protocol) and
+influence-guided near-duplicate data pruning. Read `README_internal.md` (pipeline, protocol; local only, not on GitHub) and
 `PAPER_PLAN.md` (what each sweep is for) before doing anything.
 
 ## Environment

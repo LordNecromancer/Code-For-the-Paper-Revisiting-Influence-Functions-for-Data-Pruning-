@@ -6,4 +6,4 @@ logs/
 .venv/
 .cache/
 *.pyc
-README.md
+README_internal.md

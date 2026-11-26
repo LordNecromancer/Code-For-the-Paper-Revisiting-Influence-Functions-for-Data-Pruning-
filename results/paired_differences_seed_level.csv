@@ -1,0 +1,441 @@
+dataset,model,run,comparison,method_a,method_b,metric,ratio,seed,acc_a,acc_b,diff_pp
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.3,0,72.34,72.58,-0.24
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.3,1,72.75,72.33,0.42
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.3,2,72.57,72.63,-0.06
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.5,0,68.66,68.81,-0.15
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.5,1,69.08,68.89,0.19
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.5,2,68.06,68.58,-0.52
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.7,0,59.48,59.87,-0.39
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.7,1,61.79,62.1,-0.31
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.7,2,60.53,62.86,-2.33
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.3,0,72.38,71.0,1.38
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.3,1,72.76,73.1,-0.34
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.3,2,72.58,71.64,0.94
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.5,0,67.64,68.36,-0.72
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.5,1,68.52,68.08,0.44
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.5,2,67.56,68.0,-0.44
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.7,0,58.28,59.74,-1.46
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.7,1,61.16,60.98,0.18
+CIFAR-100,ResNet-18,cifar100_r18_snap,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.7,2,60.48,61.94,-1.46
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.3,0,71.41,71.39,0.02
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.3,1,72.22,70.97,1.25
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.3,2,72.68,71.22,1.46
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.5,0,64.7,57.34,7.36
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.5,1,65.26,58.6,6.66
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.5,2,64.54,59.71,4.83
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.7,0,44.14,34.16,9.98
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.7,1,43.69,36.72,6.97
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.7,2,43.27,39.38,3.89
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.3,0,71.88,70.36,1.52
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.3,1,72.14,70.48,1.66
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.3,2,71.82,70.6,1.22
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.5,0,64.56,56.86,7.7
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.5,1,64.84,58.22,6.62
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.5,2,63.94,59.24,4.7
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.7,0,43.46,34.02,9.44
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.7,1,42.32,36.92,5.4
+CIFAR-100,ResNet-18,cifar100_r18_snap,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.7,2,41.68,38.94,2.74
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.5,0,67.43,68.62,-1.19
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.5,1,68.07,69.37,-1.3
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.5,2,67.84,68.73,-0.89
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.7,0,60.28,58.35,1.93
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.7,1,59.41,60.52,-1.11
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.7,2,60.46,59.49,0.97
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.5,0,67.58,67.88,-0.3
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.5,1,67.44,68.9,-1.46
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.5,2,67.2,68.7,-1.5
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.7,0,59.96,57.42,2.54
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.7,1,58.02,58.3,-0.28
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.7,2,59.24,60.46,-1.22
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.5,0,67.79,68.62,-0.83
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.5,1,68.79,69.37,-0.58
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.5,2,68.22,68.73,-0.51
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.7,0,59.64,58.35,1.29
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.7,1,60.9,60.52,0.38
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.7,2,60.9,59.49,1.41
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.5,0,67.64,67.88,-0.24
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.5,1,68.86,68.9,-0.04
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.5,2,68.52,68.7,-0.18
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.7,0,58.76,57.42,1.34
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.7,1,60.04,58.3,1.74
+CIFAR-100,ResNet-18,cifar100_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.7,2,60.3,60.46,-0.16
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,0,67.43,69.73,-2.3
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,1,68.07,68.96,-0.89
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,2,67.84,69.53,-1.69
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,0,60.28,58.95,1.33
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,1,59.41,56.38,3.03
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,2,60.46,55.59,4.87
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.5,0,67.58,68.7,-1.12
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.5,1,67.44,69.7,-2.26
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.5,2,67.2,69.4,-2.2
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.7,0,59.96,56.96,3.0
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.7,1,58.02,55.96,2.06
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.7,2,59.24,55.36,3.88
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,0,67.79,69.14,-1.35
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,1,68.79,69.58,-0.79
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,2,68.22,70.07,-1.85
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,0,59.64,52.0,7.64
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,1,60.9,55.66,5.24
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,2,60.9,54.19,6.71
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,0,67.64,68.96,-1.32
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,1,68.86,69.48,-0.62
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,2,68.52,69.0,-0.48
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,0,58.76,52.62,6.14
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,1,60.04,55.3,4.74
+CIFAR-100,ResNet-18,cifar100_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,2,60.3,55.04,5.26
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.3,0,72.71,73.67,-0.96
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.3,1,73.01,72.1,0.91
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.3,2,73.13,73.77,-0.64
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,0,69.73,69.14,0.59
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,1,68.96,69.58,-0.62
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,2,69.53,70.07,-0.54
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,0,58.95,52.0,6.95
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,1,56.38,55.66,0.72
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,2,55.59,54.19,1.4
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.3,0,72.58,71.84,0.74
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.3,1,72.76,71.78,0.98
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.3,2,72.72,73.42,-0.7
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,0,68.7,68.96,-0.26
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,1,69.7,69.48,0.22
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,2,69.4,69.0,0.4
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,0,56.96,52.62,4.34
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,1,55.96,55.3,0.66
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,2,55.36,55.04,0.32
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.3,0,72.71,72.52,0.19
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.3,1,73.01,72.42,0.59
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.3,2,73.13,72.18,0.95
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.5,0,69.73,68.62,1.11
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.5,1,68.96,69.37,-0.41
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.5,2,69.53,68.73,0.8
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.7,0,58.95,58.35,0.6
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.7,1,56.38,60.52,-4.14
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.7,2,55.59,59.49,-3.9
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.3,0,72.58,71.2,1.38
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.3,1,72.76,72.46,0.3
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.3,2,72.72,71.82,0.9
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.5,0,68.7,67.88,0.82
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.5,1,69.7,68.9,0.8
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.5,2,69.4,68.7,0.7
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.7,0,56.96,57.42,-0.46
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.7,1,55.96,58.3,-2.34
+CIFAR-100,ResNet-18,cifar100_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.7,2,55.36,60.46,-5.1
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.3,0,73.44,73.16,0.28
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.3,1,72.7,72.21,0.49
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.3,2,72.97,72.82,0.15
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.5,0,68.88,69.46,-0.58
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.5,1,69.54,67.37,2.17
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.5,2,69.49,69.42,0.07
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.7,0,57.39,58.32,-0.93
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.7,1,58.45,59.77,-1.32
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.7,2,57.47,59.81,-2.34
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.3,0,72.58,72.5,0.08
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.3,1,72.1,72.1,0.0
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.3,2,72.4,73.54,-1.14
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.5,0,67.74,69.96,-2.22
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.5,1,68.62,67.48,1.14
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.5,2,68.86,68.56,0.3
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.7,0,56.66,58.16,-1.5
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.7,1,56.98,59.32,-2.34
+CIFAR-100,ResNet-18,cifar100_r18_snap,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.7,2,57.06,59.7,-2.64
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,test_acc,0.3,0,96.66,96.81,-0.15
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,test_acc,0.3,1,96.89,96.86,0.03
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,test_acc,0.3,2,96.88,96.7,0.18
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,test_acc,0.5,0,96.18,96.35,-0.17
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,test_acc,0.5,1,96.44,96.27,0.17
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,test_acc,0.5,2,96.22,96.33,-0.11
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,test_acc,0.7,0,95.39,95.54,-0.15
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,test_acc,0.7,1,95.3,95.14,0.16
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,test_acc,0.7,2,95.25,95.39,-0.14
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,val_acc,0.3,0,97.12,97.16,-0.04
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,val_acc,0.3,1,97.28,97.1,0.18
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,val_acc,0.3,2,96.96,97.14,-0.18
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,val_acc,0.5,0,96.7,96.56,0.14
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,val_acc,0.5,1,96.68,96.62,0.06
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,val_acc,0.5,2,96.44,96.72,-0.28
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,val_acc,0.7,0,95.68,95.5,0.18
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,val_acc,0.7,1,95.5,95.56,-0.06
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (DINOv2 pairs),pair_influence@dinov2_s14,pair_loss@dinov2_s14,val_acc,0.7,2,95.46,95.6,-0.14
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.3,0,96.9,96.84,0.06
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.3,1,96.65,96.83,-0.18
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.3,2,96.78,96.76,0.02
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.5,0,95.97,96.12,-0.15
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.5,1,96.24,96.15,0.09
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.5,2,96.13,96.34,-0.21
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.7,0,95.02,95.03,-0.01
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.7,1,95.26,95.24,0.02
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.7,2,94.92,95.25,-0.33
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.3,0,97.26,97.14,0.12
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.3,1,96.88,97.18,-0.3
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.3,2,97.3,97.1,0.2
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.5,0,96.18,96.78,-0.6
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.5,1,96.6,96.42,0.18
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.5,2,96.84,96.7,0.14
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.7,0,95.6,95.62,-0.02
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.7,1,95.58,95.5,0.08
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.7,2,95.38,95.62,-0.24
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.3,0,96.66,96.77,-0.11
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.3,1,96.89,96.8,0.09
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.3,2,96.88,96.82,0.06
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.5,0,96.18,96.15,0.03
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.5,1,96.44,96.15,0.29
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.5,2,96.22,96.15,0.07
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.7,0,95.39,94.88,0.51
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.7,1,95.3,94.78,0.52
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.7,2,95.25,95.01,0.24
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.3,0,97.12,97.26,-0.14
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.3,1,97.28,96.88,0.4
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.3,2,96.96,96.96,0.0
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.5,0,96.7,96.38,0.32
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.5,1,96.68,96.62,0.06
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.5,2,96.44,96.3,0.14
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.7,0,95.68,95.44,0.24
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.7,1,95.5,95.46,0.04
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.7,2,95.46,95.78,-0.32
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.3,0,96.9,96.8,0.1
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.3,1,96.65,96.57,0.08
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.3,2,96.78,96.7,0.08
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.5,0,95.97,96.24,-0.27
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.5,1,96.24,96.13,0.11
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.5,2,96.13,95.99,0.14
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.7,0,95.02,94.89,0.13
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.7,1,95.26,95.17,0.09
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.7,2,94.92,95.18,-0.26
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.3,0,97.26,97.04,0.22
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.3,1,96.88,97.12,-0.24
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.3,2,97.3,97.1,0.2
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.5,0,96.18,96.68,-0.5
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.5,1,96.6,96.22,0.38
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.5,2,96.84,96.4,0.44
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.7,0,95.6,95.7,-0.1
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.7,1,95.58,95.0,0.58
+CIFAR-10,ResNet-50 (fine-tuned),cifar10_ft_r50,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.7,2,95.38,95.62,-0.24
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.3,0,94.08,93.75,0.33
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.3,1,93.71,93.94,-0.23
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.3,2,93.5,94.45,-0.95
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.5,0,92.49,91.53,0.96
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.5,1,93.01,92.72,0.29
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.5,2,92.45,92.37,0.08
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.7,0,88.83,89.14,-0.31
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.7,1,88.19,89.09,-0.9
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,test_acc,0.7,2,88.3,88.58,-0.28
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.3,0,94.62,94.38,0.24
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.3,1,94.14,94.52,-0.38
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.3,2,93.94,94.62,-0.68
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.5,0,92.8,92.36,0.44
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.5,1,93.6,93.24,0.36
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.5,2,93.18,92.3,0.88
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.7,0,88.8,89.2,-0.4
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.7,1,88.7,89.44,-0.74
+CIFAR-10,ResNet-18,cifar10_r18,ccs class-balanced - ccs,ccs[per_class=True],ccs,val_acc,0.7,2,88.28,89.14,-0.86
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.3,0,93.79,94.2,-0.41
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.3,1,94.06,93.55,0.51
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.3,2,94.17,93.98,0.19
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.5,0,92.7,92.74,-0.04
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.5,1,92.51,90.93,1.58
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.5,2,92.88,92.71,0.17
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.7,0,80.78,79.82,0.96
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.7,1,81.31,76.64,4.67
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,test_acc,0.7,2,81.14,71.09,10.05
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.3,0,94.64,94.72,-0.08
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.3,1,94.66,93.16,1.5
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.3,2,94.42,94.42,0.0
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.5,0,92.74,93.28,-0.54
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.5,1,93.2,91.06,2.14
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.5,2,93.22,93.12,0.1
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.7,0,81.88,80.0,1.88
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.7,1,82.02,76.98,5.04
+CIFAR-10,ResNet-18,cifar10_r18,el2n class-balanced - el2n,el2n[per_class=True],el2n,val_acc,0.7,2,82.34,71.36,10.98
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.3,0,93.48,93.43,0.05
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.3,1,93.61,93.58,0.03
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.3,2,93.41,93.51,-0.1
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.5,0,91.28,91.85,-0.57
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.5,1,91.03,91.62,-0.59
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.5,2,91.16,90.66,0.5
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.7,0,86.98,86.85,0.13
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.7,1,86.31,87.29,-0.98
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,test_acc,0.7,2,87.42,87.73,-0.31
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.3,0,93.24,93.98,-0.74
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.3,1,94.18,93.64,0.54
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.3,2,93.88,94.0,-0.12
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.5,0,91.82,92.38,-0.56
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.5,1,91.82,91.86,-0.04
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.5,2,91.58,91.54,0.04
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.7,0,87.38,87.06,0.32
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.7,1,86.9,87.68,-0.78
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_loss (self pairs),pair_influence@self,pair_loss@self,val_acc,0.7,2,88.12,88.16,-0.04
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.3,0,93.48,93.68,-0.2
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.3,1,93.61,93.77,-0.16
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.3,2,93.41,93.62,-0.21
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.5,0,91.28,91.89,-0.61
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.5,1,91.03,91.91,-0.88
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.5,2,91.16,91.79,-0.63
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.7,0,86.98,87.51,-0.53
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.7,1,86.31,87.13,-0.82
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,test_acc,0.7,2,87.42,87.5,-0.08
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.3,0,93.24,93.68,-0.44
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.3,1,94.18,94.0,0.18
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.3,2,93.88,94.18,-0.3
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.5,0,91.82,92.08,-0.26
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.5,1,91.82,91.76,0.06
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.5,2,91.58,92.08,-0.5
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.7,0,87.38,87.7,-0.32
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.7,1,86.9,87.8,-0.9
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence - pair_random (self pairs),pair_influence@self,pair_random@self,val_acc,0.7,2,88.12,87.96,0.16
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,test_acc,0.3,0,93.27,93.48,-0.21
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,test_acc,0.3,1,93.46,93.61,-0.15
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,test_acc,0.3,2,93.72,93.41,0.31
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,test_acc,0.5,0,91.83,91.28,0.55
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,test_acc,0.5,1,91.89,91.03,0.86
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,test_acc,0.5,2,91.1,91.16,-0.06
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,test_acc,0.7,0,87.03,86.98,0.05
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,test_acc,0.7,1,86.46,86.31,0.15
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,test_acc,0.7,2,88.17,87.42,0.75
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,val_acc,0.3,0,93.84,93.24,0.6
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,val_acc,0.3,1,94.02,94.18,-0.16
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,val_acc,0.3,2,93.72,93.88,-0.16
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,val_acc,0.5,0,91.48,91.82,-0.34
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,val_acc,0.5,1,91.92,91.82,0.1
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,val_acc,0.5,2,91.64,91.58,0.06
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,val_acc,0.7,0,87.6,87.38,0.22
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,val_acc,0.7,1,86.22,86.9,-0.68
+CIFAR-10,ResNet-18,cifar10_r18,pair_influence_rw - pair_influence (self pairs),pair_influence_rw@self,pair_influence@self,val_acc,0.7,2,88.36,88.12,0.24
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val - pair_influence (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val],pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,0,91.8,92.39,-0.59
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val - pair_influence (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val],pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,0,87.98,88.36,-0.38
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val - pair_influence (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val],pair_influence@dinov2_s14[influence_key=param_norm_e10],val_b_acc,0.5,0,91.96,93.4,-1.44
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val - pair_influence (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val],pair_influence@dinov2_s14[influence_key=param_norm_e10],val_b_acc,0.7,0,88.32,88.76,-0.44
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val - pair_random (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val],pair_random@dinov2_s14,test_acc,0.5,0,91.8,92.2,-0.4
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val - pair_random (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val],pair_random@dinov2_s14,test_acc,0.7,0,87.98,87.54,0.44
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val - pair_random (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val],pair_random@dinov2_s14,val_b_acc,0.5,0,91.96,92.48,-0.52
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val - pair_random (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val],pair_random@dinov2_s14,val_b_acc,0.7,0,88.32,87.04,1.28
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val early - pair_influence (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val_early],pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,0,91.14,92.39,-1.25
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val early - pair_influence (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val_early],pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,0,88.18,88.36,-0.18
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val early - pair_influence (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val_early],pair_influence@dinov2_s14[influence_key=param_norm_e10],val_b_acc,0.5,0,91.04,93.4,-2.36
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val early - pair_influence (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val_early],pair_influence@dinov2_s14[influence_key=param_norm_e10],val_b_acc,0.7,0,88.8,88.76,0.04
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val early - pair_random (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val_early],pair_random@dinov2_s14,test_acc,0.5,0,91.14,92.2,-1.06
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val early - pair_random (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val_early],pair_random@dinov2_s14,test_acc,0.7,0,88.18,87.54,0.64
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val early - pair_random (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val_early],pair_random@dinov2_s14,val_b_acc,0.5,0,91.04,92.48,-1.44
+CIFAR-10,ResNet-18,cifar10_r18_dir,TracIn-val early - pair_random (DINOv2 pairs),pair_loss@dinov2_s14[loss_key=tracin_val_early],pair_random@dinov2_s14,val_b_acc,0.7,0,88.8,87.04,1.76
+CIFAR-10,ResNet-18,cifar10_r18_dir,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,0,92.39,91.9,0.49
+CIFAR-10,ResNet-18,cifar10_r18_dir,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,0,88.36,88.6,-0.24
+CIFAR-10,ResNet-18,cifar10_r18_dir,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_b_acc,0.5,0,93.4,91.84,1.56
+CIFAR-10,ResNet-18,cifar10_r18_dir,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_b_acc,0.7,0,88.76,88.92,-0.16
+CIFAR-10,ResNet-18,cifar10_r18_dir,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.5,0,92.39,92.2,0.19
+CIFAR-10,ResNet-18,cifar10_r18_dir,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.7,0,88.36,87.54,0.82
+CIFAR-10,ResNet-18,cifar10_r18_dir,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_b_acc,0.5,0,93.4,92.48,0.92
+CIFAR-10,ResNet-18,cifar10_r18_dir,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_b_acc,0.7,0,88.76,87.04,1.72
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (e10) - pair_influence (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A_e10],pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,0,91.97,92.39,-0.42
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (e10) - pair_influence (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A_e10],pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,0,88.01,88.36,-0.35
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (e10) - pair_influence (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A_e10],pair_influence@dinov2_s14[influence_key=param_norm_e10],val_b_acc,0.5,0,91.68,93.4,-1.72
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (e10) - pair_influence (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A_e10],pair_influence@dinov2_s14[influence_key=param_norm_e10],val_b_acc,0.7,0,87.92,88.76,-0.84
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (e10) - pair_random (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A_e10],pair_random@dinov2_s14,test_acc,0.5,0,91.97,92.2,-0.23
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (e10) - pair_random (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A_e10],pair_random@dinov2_s14,test_acc,0.7,0,88.01,87.54,0.47
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (e10) - pair_random (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A_e10],pair_random@dinov2_s14,val_b_acc,0.5,0,91.68,92.48,-0.8
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (e10) - pair_random (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A_e10],pair_random@dinov2_s14,val_b_acc,0.7,0,87.92,87.04,0.88
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (final) - pair_influence (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A],pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,0,91.02,92.39,-1.37
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (final) - pair_influence (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A],pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,0,87.76,88.36,-0.6
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (final) - pair_influence (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A],pair_influence@dinov2_s14[influence_key=param_norm_e10],val_b_acc,0.5,0,91.04,93.4,-2.36
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (final) - pair_influence (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A],pair_influence@dinov2_s14[influence_key=param_norm_e10],val_b_acc,0.7,0,87.92,88.76,-0.84
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (final) - pair_random (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A],pair_random@dinov2_s14,test_acc,0.5,0,91.02,92.2,-1.18
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (final) - pair_random (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A],pair_random@dinov2_s14,test_acc,0.7,0,87.76,87.54,0.22
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (final) - pair_random (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A],pair_random@dinov2_s14,val_b_acc,0.5,0,91.04,92.48,-1.44
+CIFAR-10,ResNet-18,cifar10_r18_dir,valinf (final) - pair_random (DINOv2 pairs),pair_valinf@dinov2_s14[valinf_key=val_removal_A],pair_random@dinov2_s14,val_b_acc,0.7,0,87.92,87.04,0.88
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.5,0,90.5,91.63,-1.13
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.5,1,90.64,91.43,-0.79
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.5,2,90.52,91.92,-1.4
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.7,0,86.13,87.67,-1.54
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.7,1,85.98,87.71,-1.73
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,test_acc,0.7,2,86.39,88.11,-1.72
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.5,0,90.62,92.68,-2.06
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.5,1,90.78,91.66,-0.88
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.5,2,90.52,92.24,-1.72
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.7,0,85.84,87.74,-1.9
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.7,1,86.04,88.2,-2.16
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (influence) - pair_random (DINOv2 pairs),"pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_random@dinov2_s14,val_acc,0.7,2,86.44,88.2,-1.76
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.5,0,90.74,91.63,-0.89
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.5,1,90.56,91.43,-0.87
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.5,2,90.33,91.92,-1.59
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.7,0,86.63,87.67,-1.04
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.7,1,84.93,87.71,-2.78
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,test_acc,0.7,2,85.84,88.11,-2.27
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.5,0,90.28,92.68,-2.4
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.5,1,90.5,91.66,-1.16
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.5,2,90.12,92.24,-2.12
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.7,0,86.94,87.74,-0.8
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.7,1,85.2,88.2,-3.0
+CIFAR-10,ResNet-18,cifar10_r18_snap,keep easy (loss) - pair_random (DINOv2 pairs),"pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_random@dinov2_s14,val_acc,0.7,2,85.56,88.2,-2.64
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,0,90.5,92.76,-2.26
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,1,90.64,92.88,-2.24
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.5,2,90.52,91.97,-1.45
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,0,86.13,87.99,-1.86
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,1,85.98,87.74,-1.76
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],test_acc,0.7,2,86.39,87.37,-0.98
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.5,0,90.62,93.4,-2.78
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.5,1,90.78,93.4,-2.62
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.5,2,90.52,93.22,-2.7
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.7,0,85.84,88.82,-2.98
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.7,1,86.04,87.94,-1.9
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, influence (DINOv2 pairs, e10)","pair_influence@dinov2_s14[influence_key=param_norm_e10,keep=easy]",pair_influence@dinov2_s14[influence_key=param_norm_e10],val_acc,0.7,2,86.44,87.66,-1.22
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,0,90.74,92.58,-1.84
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,1,90.56,91.59,-1.03
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,2,90.33,92.6,-2.27
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,0,86.63,87.69,-1.06
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,1,84.93,87.91,-2.98
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,2,85.84,88.23,-2.39
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,0,90.28,93.2,-2.92
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,1,90.5,92.22,-1.72
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,2,90.12,93.36,-3.24
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,0,86.94,87.64,-0.7
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,1,85.2,88.82,-3.62
+CIFAR-10,ResNet-18,cifar10_r18_snap,"keep easy - keep hard, loss (DINOv2 pairs, e10)","pair_loss@dinov2_s14[keep=easy,loss_key=loss_e10]",pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,2,85.56,88.54,-2.98
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.3,0,93.92,93.69,0.23
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.3,1,93.74,94.38,-0.64
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.3,2,94.09,93.49,0.6
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,0,92.76,92.58,0.18
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,1,92.88,91.59,1.29
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.5,2,91.97,92.6,-0.63
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,0,87.99,87.69,0.3
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,1,87.74,87.91,-0.17
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],test_acc,0.7,2,87.37,88.23,-0.86
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.3,0,93.98,93.94,0.04
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.3,1,94.0,93.98,0.02
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.3,2,94.88,94.0,0.88
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,0,93.4,93.2,0.2
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,1,93.4,92.22,1.18
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.5,2,93.22,93.36,-0.14
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,0,88.82,87.64,1.18
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,1,87.94,88.82,-0.88
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=loss_e10],val_acc,0.7,2,87.66,88.54,-0.88
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence - pair_loss (self_e10 pairs),pair_influence@self_e10[influence_key=param_norm_e10],pair_loss@self_e10[loss_key=loss_e10],test_acc,0.5,0,92.29,92.2,0.09
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence - pair_loss (self_e10 pairs),pair_influence@self_e10[influence_key=param_norm_e10],pair_loss@self_e10[loss_key=loss_e10],test_acc,0.7,0,87.13,87.1,0.03
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence - pair_loss (self_e10 pairs),pair_influence@self_e10[influence_key=param_norm_e10],pair_loss@self_e10[loss_key=loss_e10],val_acc,0.5,0,92.96,92.84,0.12
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence - pair_loss (self_e10 pairs),pair_influence@self_e10[influence_key=param_norm_e10],pair_loss@self_e10[loss_key=loss_e10],val_acc,0.7,0,88.04,87.56,0.48
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss[el2n] (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=el2n],test_acc,0.5,0,92.76,92.28,0.48
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss[el2n] (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=el2n],test_acc,0.7,0,87.99,87.62,0.37
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss[el2n] (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=el2n],val_acc,0.5,0,93.4,93.02,0.38
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_loss[el2n] (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_loss@dinov2_s14[loss_key=el2n],val_acc,0.7,0,88.82,88.3,0.52
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.3,0,93.92,93.39,0.53
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.3,1,93.74,93.01,0.73
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.3,2,94.09,93.55,0.54
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.5,0,92.76,91.63,1.13
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.5,1,92.88,91.43,1.45
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.5,2,91.97,91.92,0.05
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.7,0,87.99,87.67,0.32
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.7,1,87.74,87.71,0.03
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,test_acc,0.7,2,87.37,88.11,-0.74
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.3,0,93.98,93.82,0.16
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.3,1,94.0,93.94,0.06
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.3,2,94.88,93.94,0.94
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.5,0,93.4,92.68,0.72
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.5,1,93.4,91.66,1.74
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.5,2,93.22,92.24,0.98
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.7,0,88.82,87.74,1.08
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.7,1,87.94,88.2,-0.26
+CIFAR-10,ResNet-18,cifar10_r18_snap,"pair_influence - pair_random (DINOv2 pairs, e10)",pair_influence@dinov2_s14[influence_key=param_norm_e10],pair_random@dinov2_s14,val_acc,0.7,2,87.66,88.2,-0.54
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence - pair_random (self_e10 pairs),pair_influence@self_e10[influence_key=param_norm_e10],pair_random@self_e10,test_acc,0.5,0,92.29,91.85,0.44
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence - pair_random (self_e10 pairs),pair_influence@self_e10[influence_key=param_norm_e10],pair_random@self_e10,test_acc,0.7,0,87.13,87.62,-0.49
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence - pair_random (self_e10 pairs),pair_influence@self_e10[influence_key=param_norm_e10],pair_random@self_e10,val_acc,0.5,0,92.96,91.78,1.18
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence - pair_random (self_e10 pairs),pair_influence@self_e10[influence_key=param_norm_e10],pair_random@self_e10,val_acc,0.7,0,88.04,87.48,0.56
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence[final-epoch scores] - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.5,0,91.59,91.63,-0.04
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence[final-epoch scores] - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,test_acc,0.7,0,86.91,87.67,-0.76
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence[final-epoch scores] - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.5,0,91.9,92.68,-0.78
+CIFAR-10,ResNet-18,cifar10_r18_snap,pair_influence[final-epoch scores] - pair_random (DINOv2 pairs),pair_influence@dinov2_s14,pair_random@dinov2_s14,val_acc,0.7,0,86.7,87.74,-1.04
