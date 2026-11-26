@@ -18,6 +18,7 @@ run through the same training pipeline.
 | `results/<run>.csv` | one row per trained model, for each experiment directory (see below) |
 | `results/paired_differences_seed_level.csv` | seed-level paired differences A − B on the same scoring run and pairs |
 | `make_paired_differences.py` | rebuilds the paired-differences file from `results/*.csv` |
+| `figures/cifar10_t1/` | merge examples (original pair and merged image) for the `avg` and `featmatch` operators, from the tier-1 run |
 | `make_paper_tables.py`, `make_paper_tables_c100.py` | build the paper tables from a full local `runs/` directory |
 | `tests/` | unit tests, including influence checks against autograd |
 | `colab/`, `kaggle/` | notebooks to run single seeds on Colab or Kaggle |
@@ -56,7 +57,8 @@ python make_paired_differences.py      # -> results/paired_differences_seed_leve
 
 Each row of the paired-differences file is `diff_pp = acc_a − acc_b` in percentage points, for one run,
 comparison, metric, ratio and seed. Methods A and B always share the same scoring run (same seed and pool),
-and for pair methods the same pairs.
+and for pair methods the same pairs. The file reproduces the paper's Table 3: rows with `metric == "test_acc"`,
+averaged over seeds (and over CIFAR-10 and CIFAR-100 for the from-scratch rows).
 
 ### Option B: from scratch (GPU)
 
@@ -77,11 +79,13 @@ python make_paper_tables.py; python make_paper_tables_c100.py         # -> runs/
 | `cifar10_r18_dir` | CIFAR-10, ResNet-18 (validation-directed influence) | `tier2d_directed` |
 | `cifar100_r18_snap` | CIFAR-100, ResNet-18 | `tier4_cifar100_final`, `tier4c_keep_easy_c100`, `local/exp4_balanced_c100`, `local/exp5_keep_easy_loss_c100` |
 | `cifar10_ft_r50` | CIFAR-10, ImageNet-pretrained ResNet-50, fine-tuned 3 epochs at 224×224 | `tier5_finetune` |
+| `cifar10_t1` | CIFAR-10, ResNet-18. **Exploratory: one seed, 30 epochs, earlier influence implementation (before the float64 fixes); reported in Table 8 only.** | `tier1_decision` |
 
 Run the sweeps of one directory in the order listed: later sweeps reuse the scores and embeddings that the
-first one computes. Sweep paths are relative to `sweeps/`. Other files in `sweeps/` (`tier1_decision`,
-`tier3_ablations`, `tier4_cifar100_main`, `tier4b_*`, `tier5_transfer`, `extra/`) are development passes
-or unused options. They are not part of the reported results.
+first one computes. Sweep paths are relative to `sweeps/`. Other files in `sweeps/` (`tier3_ablations`,
+`tier4_cifar100_main`, `tier4b_*`, `tier5_transfer`, `extra/`) are development passes or unused options.
+They are not part of the reported results. Rerunning `tier1_decision` with the current code uses the
+float64 influence implementation, so its influence-based rows can differ slightly from `results/cifar10_t1.csv`.
 
 Measured cost on a GTX 1080: about 31 s per epoch for ResNet-18 on the 45k pool, and 100 epochs per model (the fine-tuning setting uses 3 epochs).
 
