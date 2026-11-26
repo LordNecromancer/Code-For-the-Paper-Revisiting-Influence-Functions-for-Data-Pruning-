@@ -58,7 +58,9 @@ python make_paired_differences.py      # -> results/paired_differences_seed_leve
 Each row of the paired-differences file is `diff_pp = acc_a − acc_b` in percentage points, for one run,
 comparison, metric, ratio and seed. Methods A and B always share the same scoring run (same seed and pool),
 and for pair methods the same pairs. The file reproduces the paper's Table 3: rows with `metric == "test_acc"`,
-averaged over seeds (and over CIFAR-10 and CIFAR-100 for the from-scratch rows).
+averaged over seeds (and over CIFAR-10 and CIFAR-100 for the from-scratch rows). Two cell means fall exactly
+on a rounding boundary (−1.305 and +0.045); the paper rounds half away from zero, so Python's default
+rounding may show them 0.01 closer to zero (−1.30 and +0.04).
 
 ### Option B: from scratch (GPU)
 
